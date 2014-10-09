@@ -7,6 +7,7 @@ Script to load an example trajectory from the Blair lab datasets
 from __future__ import division, print_function
 
 import os
+import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
 
@@ -27,7 +28,7 @@ def load_raw():
     assert os.path.isdir(dataset)
     tracking_file = os.path.join(dataset, 'trackdata.mat')
     trackdata = sio.loadmat(tracking_file)
-    print('Loaded tracking data from', tracking_file, '.')
+    print('Loaded tracking data from', tracking_file)
     return trackdata
 
 def trajectory(data=None):
@@ -40,8 +41,8 @@ def trajectory(data=None):
 
     print('Starting at sample %d for a total of %d samples.' % (t0, N))
 
-    x, t = trackdata['Position_X'][t_slice].T
-    y = trackdata['Position_Y'][t_slice,0]
+    x, t = data['Position_X'][t_slice].T
+    y = data['Position_Y'][t_slice,0]
 
     print('Data starts at t = %f.' % t[0])
 

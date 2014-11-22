@@ -2,7 +2,7 @@
 
 This repository contains the IPython Notebook files that were used to develop the location-controlled oscillator (LCO) model that I presented at the Society for Neuroscience 2014 meeting:
 
-* J. D. Monaco, K. Zhang, and H. T. Blair. (2014) **Spatial rate/phase codes provide landmark-based error correction in a temporal model of theta cells**. Society for Neuroscience 2014, Washington, D.C. 752.07.
+* J. D. Monaco, H. T. Blair, and K. Zhang. (2014) **Spatial rate/phase codes provide landmark-based error correction in a temporal model of theta cells**. Society for Neuroscience 2014, Washington, D.C. 752.07.
 
 The poster is available in PDF form on my website:
 
